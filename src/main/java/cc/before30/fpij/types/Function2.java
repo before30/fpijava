@@ -22,4 +22,6 @@ public interface Function2<T1, T2, R> extends BiFunction<T1, T2, R> {
         Objects.requireNonNull(after);
         return (input1, input2) -> after.apply(apply(input1, input2));
     }
+
+
 }
