@@ -167,5 +167,94 @@ public class Funs {
         return o -> p.test(o, t1, t2, t3, t4, t5, t6, t7, t8, t9, t10);
     }
 
-    
+
+    public static <O, T1, R> Function<O, R> applying(final Function2<? super O, ? super T1, ? extends R> f,
+                                                     final T1 t1) {
+        Objects.requireNonNull(f, "The function cannot be null.");
+        return o -> f.apply(o, t1);
+    }
+
+    public static <O, T1, T2, R> Function<O, R> applying(final Function3<? super O,
+            ? super T1, ? super T2,
+            ? extends R> f,
+                                                     final T1 t1, final T2 t2) {
+        Objects.requireNonNull(f, "The function cannot be null.");
+        return o -> f.apply(o, t1, t2);
+    }
+
+    public static <O, T1, T2, T3, R> Function<O, R> applying(final Function4<? super O,
+            ? super T1, ? super T2, ? super T3,
+            ? extends R> f,
+                                                         final T1 t1, final T2 t2, final T3 t3) {
+        Objects.requireNonNull(f, "The function cannot be null.");
+        return o -> f.apply(o, t1, t2, t3);
+    }
+
+    public static <O, T1, T2, T3, T4, R> Function<O, R> applying(final Function5<? super O,
+            ? super T1, ? super T2, ? super T3, ? super T4,
+            ? extends R> f,
+                                                             final T1 t1, final T2 t2, final T3 t3, final T4 t4) {
+        Objects.requireNonNull(f, "The function cannot be null.");
+        return o -> f.apply(o, t1, t2, t3, t4);
+    }
+
+    public static <O, T1, T2, T3, T4, T5,  R> Function<O, R> applying(final Function6<? super O,
+            ? super T1, ? super T2, ? super T3, ? super T4, ? super T5,
+            ? extends R> f,
+                                                                 final T1 t1, final T2 t2, final T3 t3, final T4 t4, final T5 t5) {
+        Objects.requireNonNull(f, "The function cannot be null.");
+        return o -> f.apply(o, t1, t2, t3, t4, t5);
+    }
+
+    public static <O, T1, T2, T3, T4, T5, T6, R> Function<O, R> applying(final Function7<? super O,
+            ? super T1, ? super T2, ? super T3, ? super T4, ? super T5,
+            ? super T6,
+            ? extends R> f,
+                                                                      final T1 t1, final T2 t2, final T3 t3, final T4 t4, final T5 t5,
+                                                                      final T6 t6) {
+        Objects.requireNonNull(f, "The function cannot be null.");
+        return o -> f.apply(o, t1, t2, t3, t4, t5, t6);
+    }
+
+    public static <O, T1, T2, T3, T4, T5, T6, T7, R> Function<O, R> applying(final Function8<? super O,
+            ? super T1, ? super T2, ? super T3, ? super T4, ? super T5,
+            ? super T6, ? super T7,
+            ? extends R> f,
+                                                                         final T1 t1, final T2 t2, final T3 t3, final T4 t4, final T5 t5,
+                                                                         final T6 t6, final T7 t7) {
+        Objects.requireNonNull(f, "The function cannot be null.");
+        return o -> f.apply(o, t1, t2, t3, t4, t5, t6, t7);
+    }
+
+    public static <O, T1, T2, T3, T4, T5, T6, T7, T8, R> Function<O, R> applying(final Function9<? super O,
+            ? super T1, ? super T2, ? super T3, ? super T4, ? super T5,
+            ? super T6, ? super T7, ? super T8,
+            ? extends R> f,
+                                                                             final T1 t1, final T2 t2, final T3 t3, final T4 t4, final T5 t5,
+                                                                             final T6 t6, final T7 t7, final T8 t8) {
+        Objects.requireNonNull(f, "The function cannot be null.");
+        return o -> f.apply(o, t1, t2, t3, t4, t5, t6, t7, t8);
+    }
+
+    public static <O, T1, T2, T3, T4, T5, T6, T7, T8, T9, R> Function<O, R> applying(final Function10<? super O,
+            ? super T1, ? super T2, ? super T3, ? super T4, ? super T5,
+            ? super T6, ? super T7, ? super T8, ? super T9,
+            ? extends R> f,
+                                                                                 final T1 t1, final T2 t2, final T3 t3, final T4 t4, final T5 t5,
+                                                                                 final T6 t6, final T7 t7, final T8 t8, final T9 t9) {
+        Objects.requireNonNull(f, "The function cannot be null.");
+        return o -> f.apply(o, t1, t2, t3, t4, t5, t6, t7, t8, t9);
+    }
+
+    public static <O, T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, R> Function<O, R> applying(final Function11<? super O,
+            ? super T1, ? super T2, ? super T3, ? super T4, ? super T5,
+            ? super T6, ? super T7, ? super T8, ? super T9, ? super T10,
+            ? extends R> f,
+                                                                                     final T1 t1, final T2 t2, final T3 t3, final T4 t4, final T5 t5,
+                                                                                     final T6 t6, final T7 t7, final T8 t8, final T9 t9, final T10 t10) {
+        Objects.requireNonNull(f, "The function cannot be null.");
+        return o -> f.apply(o, t1, t2, t3, t4, t5, t6, t7, t8, t9, t10);
+    }
+
+
 }
